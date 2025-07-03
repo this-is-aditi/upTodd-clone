@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UpTodd Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">UpTodd</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Programs</a>
+      <a href="#">Success Story</a>
+      <a href="#">About</a>
+      
+      <button id="demoBtn" class="demo-btn">Book a Free Demo</button>
+      <!-- Free Demo Form Section -->
+<section id="demoSection" class="demo-section">
+  <h2>Book Your Free Demo</h2>
+  <p>Fill in your details and our team will contact you shortly!</p>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+
+    </nav>
+  </header>
+
+  <!-- Cards Slider Section -->
+<section class="hero">
+  <h2>The Proof is in the Play: <span>Watch How Babies Thrive!</span></h2>
+  <p>Easy Format, Smart Choice. Invest 10 mins a day to a Brighter Tomorrow</p>
+
+  <div class="slider-container">
+    <button class="slider-btn left" onclick="scrollLeft()">&#8592;</button>
+    
+    <div class="slider" id="cardSlider">
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/z/baby-boy-reading-book-4064176.jpg" alt="baby" height="100" width="100">
+        <h4>Little Rishit</h4>
+        <p>Rishit can observe 300+ fruits & vegetables. Let's see how he does?</p>
+      </div>
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/z/baby-boy-reading-book-4064176.jpg" alt="baby" height="100" width="100">
+        <h4>Little Rishit</h4>
+        <p>Rishit can observe 300+ fruits & vegetables. Let's see how he does?</p>
+      </div>
+      <div class="card">
+        
+        <img src="https://thumbs.dreamstime.com/z/baby-boy-reading-book-4064176.jpg" alt="baby" height="100" width="100">
+        <h4>Little Rishit</h4>
+        <p>Rishit can observe 300+ fruits & vegetables. Let's see how he does?</p>
+      </div>
+      <!-- Inside the slider (after 3-4 visible cards) -->
+<div class="card extra-card" style="display: none;">
+  
+   <img src="https://thumbs.dreamstime.com/z/baby-boy-reading-book-4064176.jpg" alt="baby" height="100" width="100">
+  <h4>Little Rishit</h4>
+  <p>Another baby thriving with the UpTodd program. See how they play!</p>
+</div>
+
+<div class="card extra-card" style="display: none;">
+  
+   <img src="https://thumbs.dreamstime.com/z/baby-boy-reading-book-4064176.jpg" alt="baby" height="100" width="100">
+  <h4>Little Rishit</h4>
+  <p>Little one amazed the family with fast learning and joy!</p>
+</div>
+
+      
+    </div>
+
+    <button class="slider-btn right" onclick="scrollRight()">&#8594;</button>
+  </div>
+
+  
+  <button id="seeAllBtn" class="see-all">See All</button>
+
+</section>
+
+
+  
+   
+
+  <!-- Program Description (Centered) -->
+<section class="program-centered">
+  <div class="program-content">
+    <h2>
+      UpTodd Expert Personalised Program – <br>
+      <span>Nurtures baby's genius potential</span>
+    </h2>
+    <p>
+      Holistic Approach of development on complete foundational Pillars – Just 10 Minutes a day
+    </p>
+    <ul>
+      <li>✔ 4 Cognitive Pillars: Linguistic Champion, Logic Maestro</li>
+      <li>✔ 4 Creativity Pillars</li>
+      <li>✔ 4 Physical Fit Plans</li>
+      <li>✔ 4 Moral & Ethical Pillars</li>
+      <li>✔ Intuition & Foresight Development</li>
+    </ul>
+    
+    <button id="detailsBtn" class="details-btn">Explore the Details</button>
+    <div id="detailsContent" class="details-content" style="display: none;">
+  <h3>What’s Included in the Program?</h3>
+  <ul>
+    <li>✔ 12-Month Expert Curriculum</li>
+    <li>✔ Customizable Weekly Learning Plans</li>
+    <li>✔ Age-Appropriate Materials & Games</li>
+    <li>✔ Personal Coach for Parent Support</li>
+    <li>✔ Regular Progress Reports</li>
+  </ul>
+</div>
+
+    <p>Brain simulating home environment by best on the Planet.We have your back in this journey.</p>
+  </div>
+  <div class="program-image">
+     <img src="https://thumbs.dreamstime.com/z/cute-superbaby-level-d-rendered-illustration-77568141.jpg" alt="Superbaby" height="200" width="200">
+  </div>
+</section>
+
+<!-- Final Call to Action Section -->
+<section class="cta-section">
+  <div class="cta-content">
+    <div class="cta-text">
+      <h3>Stop overspending on generic and harmful toys without seeing results on baby's development</h3>
+      <p>
+        All-in-one solution at your usual budget — with year-long kits featuring unique, organic materials for personalized brain development
+      </p>
+    </div>
+    <div class="cta-button">
+      <button id="exploreBtn" class="explore-btn">Explore Programs</button>
+    </div>
+  </div>
+
+  <!-- Hidden Content to Show on Button Click -->
+  <div id="hiddenContent" class="explore-details">
+    <h3>Personalized Brain Development Kits</h3>
+    <p>
+      Our programs are designed by experts and tailored for your baby’s growth stages. They include hands-on activities, toys, and learning tools that develop cognitive, physical, and creative abilities.
+    </p>
+    <ul>
+      <li>✔ Expert-Curated Weekly Play Plans</li>
+      <li>✔ Organic, Safe & Age-Appropriate Materials</li>
+      <li>✔ Covers Cognitive, Moral, Physical & Emotional Growth</li>
+    </ul>
+  </div>
+</section>
+
+  
+
+ 
+
+
+  
+<script src="script.js"></script>
+
+
+</body>
+</html>
