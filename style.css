@@ -334,6 +334,36 @@ body {
   font-size: 15px;
 }
 
+@media (max-width: 768px) {
+  .cta-content,
+  .program-centered,
+  .slider-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-button {
+    text-align: center;
+  }
+
+  .card {
+    min-width: 90%;
+    margin: auto;
+  }
+
+  .program-img img {
+    width: 80%;
+  }
+
+  .navbar nav {
+    display: block; /* stack links vertically */
+    text-align: center;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
